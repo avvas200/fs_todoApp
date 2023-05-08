@@ -10,6 +10,7 @@ import Home from "../Home";
 import Tasks from "../Tasks";
 import { useLogin } from "../../app/context/LoginProvider";
 import { signOut } from "../../app/api/user";
+import UserProfile from "../UserProfile";
 
 const Drawer = createDrawerNavigator();
 
@@ -23,7 +24,7 @@ const CustomDrawer = (props) => {
             flexDirection: "row",
             justifyContent: "space-between",
             alignItems: "center",
-            padding: 20,
+            padding: 30,
             backgroundColor: "#f6f6f6",
             marginBottom: 20,
           }}
@@ -85,6 +86,7 @@ const DrawerNavigator = () => {
     >
       <Drawer.Screen component={Home} name="Home" />
       <Drawer.Screen component={Tasks} name="Tasks" />
+      <Drawer.Screen component={UserProfile} name="UserProfile" />
     </Drawer.Navigator>
   );
 };

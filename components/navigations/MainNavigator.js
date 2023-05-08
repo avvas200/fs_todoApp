@@ -2,11 +2,11 @@ import React, { useContext } from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import AppForm from "../AppForm";
-import ImageUpload from "../ImageUpload";
 import UserProfile from "../UserProfile";
 import DrawerNavigator from "../navigations/DrawerNavigation";
 import { useLogin } from "../../app/context/LoginProvider";
 import AppLoader from "../AppLoader";
+import ImageUpload from "../ImageUplaod";
 
 const Stack = createStackNavigator();
 
